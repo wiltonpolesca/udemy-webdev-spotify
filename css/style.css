@@ -1,0 +1,167 @@
+/*====================================== Layout ======================================*/
+
+.debug {
+  border: 1px solid red;
+}
+
+html, body, .capa {
+  height: 100%;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+body {
+  /*Combina imagens com transparência e cor para montar o background*/
+  background: url('/images/capa.png'),
+              url('/images/ruido.png'),
+              linear-gradient(50deg,  #ff4169, #7c26f8);
+  /*Essa propriedade mantém o background fixo quando a página rola*/
+  background-attachment: fixed;
+  /*removendo o scrool horizontal*/
+  overflow-x: hidden;
+}
+
+/* ----- Navbar ----- */
+.img-logo {
+  height: 40px;
+  width: 132px;
+  display: block;
+  background: url('/images/spotify.svg') no-repeat;
+  background-size: contain;
+}
+
+nav.navbar-transparency {
+  padding: 15px 0px;
+  background: rgba(0,0,0,0.6);
+  border: none;
+}
+
+.navbar-brand {
+  padding: 5px 15px;
+}
+
+.divisor {
+  width: 1px;
+  height: 16px;
+  background: white;
+  margin: 16px 10px;
+}
+
+.navbar-inverse .navbar-nav>li>a, footer .nav a{
+  color: white;
+}
+.navbar-inverse .navbar-nav>li>a:hover, footer .nav a:hover {
+  color: #9df0e1;
+  background: none;
+}
+
+/* ----- Main image of the layout ----- */
+.capa {
+  width: 100%;
+  /*Centralizar verticalmente*/
+  display: table;
+}
+.texto-capa {
+  text-align: center;
+  color: white;
+  /*Centralizar verticalmente*/
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/* ----- Buttons ----- */
+.btn-custom {
+  color: white;
+  border-radius: 500px;
+  padding: 10px 35px;
+  margin: 0px 15px;
+  text-transform: uppercase;
+  transition: background 0.4s, color 0.4s
+}
+
+.btn-purple {
+  background-color: #7c25f8;
+}
+
+.btn-purple:hover{
+  background: #6207e3; 
+  color: white;
+}
+
+.btn-white {
+  border: 2px solid white;
+}
+.btn-white:hover{
+  background: white; 
+  color: black;
+}
+
+/* ----- Services ----- */
+.services {
+  background: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.books {
+  padding: 10px 0px 10px 0px;
+}
+
+/* ----- Resources ----- */
+.resources {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: white;
+}
+
+.rotation {
+  transform: rotate(30deg);
+  padding-left: 80px;
+
+}
+
+/* ----- footer ----- */
+
+.footer {
+  background-color: black;
+  padding: 50px 0px 20px 0px;
+  /* Coloca a div acima da imagem */
+  position: relative;
+}
+
+.footer-social-media {
+  float: right;
+}
+
+/*==================================== Typografy ====================================*/
+h1 {
+  font-size: 100px;
+  font-weight: 900;
+  letter-spacing: -2px;
+  margin-bottom: 50px;
+}
+
+h2 {
+  font-size: 50px;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+}
+
+h3 {
+  font-size: 35px;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+}
+
+
+.footer h4 {
+  color: #919496;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.services h2, .services h3 {
+  color: #7c25f8;
+}
+
+.resources h3 {
+  color: #9bf0e1;
+}
